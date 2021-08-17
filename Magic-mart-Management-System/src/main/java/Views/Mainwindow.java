@@ -107,6 +107,13 @@ public class Mainwindow extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
 
@@ -207,6 +214,11 @@ public class Mainwindow extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon("I:\\Magic mart Management System\\Magic-mart-Management-System\\src\\main\\java\\Icons\\staff.jpg")); // NOI18N
 
         jLabel10.setIcon(new javax.swing.ImageIcon("I:\\Magic mart Management System\\Magic-mart-Management-System\\src\\main\\java\\Icons\\analysic.jpg")); // NOI18N
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
 
         jLabel11.setIcon(new javax.swing.ImageIcon("I:\\Magic mart Management System\\Magic-mart-Management-System\\src\\main\\java\\Icons\\cost_details.jpg")); // NOI18N
 
@@ -672,15 +684,70 @@ public class Mainwindow extends javax.swing.JFrame {
 
         jPanel3.add(jPanel14, "card12");
 
+        jLabel30.setIcon(new javax.swing.ImageIcon("I:\\Magic mart Management System\\Magic-mart-Management-System\\src\\main\\java\\Icons\\back.png")); // NOI18N
+        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel30MouseClicked(evt);
+            }
+        });
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel31.setText("Analysic");
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel32.setText("Product ID :");
+
+        jTextField1.setText("jTextField1");
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel33.setText("Duration :");
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel34.setText("From ");
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel35.setText("Until");
+
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1181, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel30)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addComponent(jLabel32)
+                        .addGap(29, 29, 29)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel33)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel34)
+                        .addGap(246, 246, 246)
+                        .addComponent(jLabel35))
+                    .addComponent(jLabel31))
+                .addContainerGap(314, Short.MAX_VALUE))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 718, Short.MAX_VALUE)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel30))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addComponent(jLabel31)))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35))
+                .addContainerGap(552, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel15, "card13");
@@ -833,6 +900,18 @@ public class Mainwindow extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane,"Sucessfuly deleted");
     }//GEN-LAST:event_jButton9ActionPerformed
 
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        CardLayout CL = (CardLayout)jPanel3.getLayout();
+        CL.show(jPanel3,"card13");
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+        // TODO add your handling code here:
+        CardLayout CL = (CardLayout)jPanel3.getLayout();
+        CL.show(jPanel3,"card2");
+    }//GEN-LAST:event_jLabel30MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -905,6 +984,12 @@ public class Mainwindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -929,6 +1014,7 @@ public class Mainwindow extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField txtDiscount;
     private javax.swing.JTextField txtGPID;
     private javax.swing.JTextField txtGroupID;
